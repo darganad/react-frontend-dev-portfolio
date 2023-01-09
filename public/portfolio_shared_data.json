@@ -1,17 +1,22 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Aditya Dargan",
+      "titles": [ "Senior Machine Learning Engineer", "Backend Engineer", "Blogger", "Options Trader" ],
       "social": [
         {
+          "name": "twitter",
+          "url": "https://www.twitter.com/AdityaDargan",
+          "class": "fab fa-twitter"
+        },
+        {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/darganad",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/aditya-dargan-38860657/",
+          "class": "fab fa-linkedin"
         }
       ],
       "image": "myProfile.jpg"

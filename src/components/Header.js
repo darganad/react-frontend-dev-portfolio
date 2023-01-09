@@ -30,6 +30,19 @@ class Header extends Component {
       this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
+    if (this.props.sharedBasicInfo) {
+      var networks = this.props.sharedBasicInfo.social.map(function (network) {
+        return (
+          <span key={network.name} className="m-4">
+            <a href={network.url} target="_blank" rel="noopener noreferrer">
+              <i className={network.class}></i>
+            </a>
+          </span>
+        );
+      });
+    }
+
+
     const HeaderTitleTypeAnimation = React.memo( () => {
       return <Typical className="title-styles" steps={this.titles} loop={50} />
     }, (props, prevProp) => true);
@@ -47,7 +60,11 @@ class Header extends Component {
               <div className="title-container">
                 <HeaderTitleTypeAnimation />
               </div>
-              <Switch
+              <div className="social-links">{networks}</div>
+
+
+
+              {/* <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
                 offColor="#baaa80"
@@ -86,7 +103,8 @@ class Header extends Component {
                   ></span>
                 }
                 id="icon-switch"
-              />
+              /> */}
+
             </div>
           </div>
         </div>
